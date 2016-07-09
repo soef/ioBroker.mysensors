@@ -1,7 +1,11 @@
 {
   "common": {
     "name": "mysensors",
+<<<<<<< HEAD
+    "version": "2.0.0",
+=======
     "version": "1.0.2",
+>>>>>>> origin/master
     "news": {
       "1.0.1": {
         "en": "necessary version of sensor module increased",
@@ -38,7 +42,7 @@
     "platform":   "Javascript/Node.js",
     "mode":       "daemon",
     "icon":       "mysensors.png",
-    "enabled":    true,
+    "enabled":    false,
     "messagebox": true,
     "extIcon":    "https://raw.githubusercontent.com/ioBroker/ioBroker.mysensors/master/admin//mysensors.png",
     "keywords": [
@@ -73,6 +77,14 @@
       "native": {}
     },
     {
+      "_id":  "commands",
+      "type": "channel",
+      "common": {
+        "name": "Commands"
+      },
+      "native": {}
+    },
+    {
       "_id":  "info.connection",
       "type": "state",
       "common": {
@@ -86,7 +98,7 @@
       "native": {}
     },
     {
-      "_id":  "inclusionOn",
+      "_id":  "commands.inclusionOn",
       "type": "state",
       "common": {
         "role":  "state",
@@ -95,7 +107,63 @@
         "type":  "boolean",
         "read":  true,
         "write": true,
-        "def":   false
+        "def":   true
+      },
+      "native": {}
+    },
+    {
+      "_id":  "commands.sendRaw",
+      "type": "state",
+      "common": {
+        "role":  "state",
+        "name":  "Send a raw command",
+        "desc":  "e.g. 255;0;3;0;19;0 for request presentatio",
+        "type":  "string",
+        "read":  true,
+        "write": true,
+        "def":   ""
+      },
+      "native": {}
+    },
+    {
+      "_id":  "commands.requestPresentation",
+      "type": "state",
+      "common": {
+        "role":  "state",
+        "name":  "Send a presentation request",
+        "desc":  "Send a presentation request",
+        "type":  "string",
+        "read":  true,
+        "write": true,
+        "def":   ""
+      },
+      "native": {}
+    },
+    {
+      "_id":  "commands.requestHeartbeat",
+      "type": "state",
+      "common": {
+        "role":  "state",
+        "name":  "Send a heartbeat request",
+        "desc":  "Send a heartbeat request",
+        "type":  "string",
+        "read":  true,
+        "write": true,
+        "def":   ""
+      },
+      "native": {}
+    },
+    {
+      "_id":  "commands.requestReboot",
+      "type": "state",
+      "common": {
+        "role":  "state",
+        "name":  "Send a reboot request",
+        "desc":  "Send a reboot request",
+        "type":  "string",
+        "read":  true,
+        "write": true,
+        "def":   ""
       },
       "native": {}
     }

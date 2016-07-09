@@ -1,6 +1,10 @@
 {
   "name": "iobroker.mysensors",
+<<<<<<< HEAD
+  "version": "2.0.0",
+=======
   "version": "1.0.2",
+>>>>>>> origin/master
   "description": "ioBroker mysensors Adapter",
   "author": {
     "name": "bluefox",
@@ -32,7 +36,6 @@
     "serialport": "^2.0.6"
   },
   "dependencies": {
-    "sensors": "^1.0.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
