@@ -1,11 +1,7 @@
 {
   "common": {
     "name": "mysensors",
-<<<<<<< HEAD
     "version": "2.0.0",
-=======
-    "version": "1.0.2",
->>>>>>> origin/master
     "news": {
       "1.0.1": {
         "en": "necessary version of sensor module increased",
